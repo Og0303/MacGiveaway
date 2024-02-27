@@ -1,0 +1,78 @@
+body {
+    
+    margin: 0; /* Reset default margin */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Add this line to center align items vertically */
+    text-align: center;
+    padding: 20px; /* Add some padding to the container */
+}
+
+.place1 {
+    padding-top: 150px;
+    width: 500px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.place2 {
+    color: rgb(234, 236, 238);
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+.giveaway {
+    width: 100%;
+    height: 100%;
+    border-radius: 90px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.time {
+    padding-top: 0.1em;
+    padding-left: 0.1em;
+    font-size: 0.5em;
+    color: rgb(236, 235, 232);
+}
+
+.time span {
+    font-size: 1.1em;
+    display: block;
+    color: rgb(190, 190, 188);
+    height: 70px;
+    width: 70px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .div {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media (min-width: 601px) {
+    .container {
+        flex-direction: row;
+    }
+}
